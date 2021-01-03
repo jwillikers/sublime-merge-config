@@ -1,0 +1,72 @@
+= Sublime Merge Settings
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:sublime-merge: https://www.sublimemerge.com/[Sublime Merge]
+
+My settings for the {sublime-merge} application.
+
+== Usage
+
+Install these settings with the following instructions.
+
+. If necessary, remove the existing settings directory.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ rm -r ~/.var/app/com.sublimemerge.App/config/sublime-merge/Packages/User
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ rm -r ~/.config/sublime-merge/Packages/User
+----
+--
+
+. Then just clone this repository to the appropriate location.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ git clone https://github.com/jwillikers/sublime-merge-settings.git \
+  ~/.var/app/com.sublimemerge.App/config/sublime-merge/Packages/User
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ git clone https://github.com/jwillikers/sublime-merge-settings.git \
+  ~/.config/sublime-merge/Packages/User
+----
+--
+
+== Code of Conduct
+
+The project's Code of Conduct is available in the link:CODE_OF_CONDUCT.adoc[] file.
+
+== License
+
+This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[GPLv3], available in the link:LICENSE.adoc[] file.
+
+== Copyright
+
+© 2020 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
