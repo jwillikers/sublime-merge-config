@@ -1,0 +1,6 @@
+[
+
+    { "keys": ["ctrl+shift+f"], "command": "fetch" },
+	{ "keys": ["ctrl+shift+l"], "command": "pull" },
+	{ "keys": ["ctrl+shift+p"], "command": "push" }
+]
