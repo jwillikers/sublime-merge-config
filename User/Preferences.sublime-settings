@@ -1,0 +1,10 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+
+	"theme": "Merge Dark.sublime-theme",
+	"time_format": "24h",
+	"visible_carriage_returns_at_eol": true,
+	"hardware_acceleration": "opengl",
+	"trim_trailing_white_space_on_save": true,
+}

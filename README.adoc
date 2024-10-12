@@ -1,4 +1,4 @@
-= Sublime Merge Settings
+= Sublime Merge Config
 Jordan Williams <jordan@jwillikers.com>
 :experimental:
 :icons: font
@@ -9,6 +9,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
+:just: https://github.com/casey/just[just]
 :sublime-merge: https://www.sublimemerge.com/[Sublime Merge]
 
 My settings for the {sublime-merge} application.
@@ -17,43 +18,35 @@ My settings for the {sublime-merge} application.
 
 Install these settings with the following instructions.
 
-. If necessary, remove the existing settings directory.
+. Install {just} by following the instructions in the https://github.com/casey/just?tab=readme-ov-file#installation[installation section].
+
+. Change to the project's directory.
 +
---
-_Flatpak_::
-+
-[source,sh]
+[,sh]
 ----
-➜ rm -r ~/.var/app/com.sublimemerge.App/config/sublime-merge/Packages/User
+cd sublime-merge-config
 ----
 
-_System Package_::
+. Clone the repository.
 +
-[source,sh]
+[,sh]
 ----
-➜ rm -r ~/.config/sublime-merge/Packages/User
-----
---
-
-. Then just clone this repository to the appropriate location.
-+
---
-_Flatpak_::
-+
-[source,sh]
-----
-➜ git clone https://github.com/jwillikers/sublime-merge-settings.git \
-  ~/.var/app/com.sublimemerge.App/config/sublime-merge/Packages/User
+git clone https://codeberg.org/jwillikers/sublime-merge-config.git
 ----
 
-_System Package_::
+. Run `just` to install everything.
 +
-[source,sh]
+[,sh]
 ----
-➜ git clone https://github.com/jwillikers/sublime-merge-settings.git \
-  ~/.config/sublime-merge/Packages/User
+just
 ----
---
+
+. On Fedora Atomic systems, reboot for the changes to take effect.
++
+[,sh]
+----
+sudo systemctl reboot
+----
 
 == Code of Conduct
 
@@ -65,7 +58,7 @@ This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[
 
 == Copyright
 
-© 2020 Jordan Williams
+© 2020-2024 Jordan Williams
 
 == Authors
 
